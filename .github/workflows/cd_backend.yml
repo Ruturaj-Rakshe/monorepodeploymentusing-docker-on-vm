@@ -23,4 +23,4 @@ jobs:
           context: .
           file: ./docker/Dockerfile.backend
           push: true
-          tags: firsteverpipeline/todo-app-backend:${{ github.sha }}
+          tags: ruturaj908/todo-app-backend:${{ github.sha }}
