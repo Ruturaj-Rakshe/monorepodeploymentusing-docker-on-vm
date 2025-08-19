@@ -27,4 +27,4 @@ jobs:
           push: true
           tags: |
             ruturaj908/todo-app-frontend:${{ github.sha }}
-            ruturaj908/todo-app-frontend:latest 
+            
