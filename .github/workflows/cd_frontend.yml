@@ -1,4 +1,4 @@
-name: Deploy the websocket backend
+name: Deploy the frontend
 
 on:
   push:
@@ -21,6 +21,8 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./docker/Dockerfile.websocket
+          file: ./docker/Dockerfile.frontend
+          build-args: 
+            - DATABASE_URL=${{ secrets.DATABASE_URL }}
           push: true
-          tags: ruturaj908/todo-app-websocket:${{ github.sha }}
+          tags: ruturaj908/todo-app-frontend:${{ github.sha }}
