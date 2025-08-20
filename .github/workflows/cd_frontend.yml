@@ -26,5 +26,5 @@ jobs:
             - DATABASE_URL=${{ secrets.DATABASE_URL }}
           push: true
           tags: |
-            ruturaj908/todo-app-frontend:${{ github.sha }}
-            
+            ruturaj908/todo-app-next-frontend:${{ github.sha }}
+
